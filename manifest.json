@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Sponsored Highlighter",
+    "version": "1.0",
+    "description": "Make 'Sponsored' text larger on Google search results",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.google.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
